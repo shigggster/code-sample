@@ -1,0 +1,110 @@
+// main styles
+
+// variables
+$mobile: 320px;
+$desktop: 980px;
+$openSans: 'Open Sans', sans-serif;
+$grey: #ddd;
+$dark-grey: #bbb;
+
+// styles
+html, body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 100%;
+}
+body {
+	font-family: $openSans;
+	font-size: 14px;
+}
+img {
+	border-style: none;
+}
+h5 {
+	color: $dark-grey;
+	margin: 10px 0;
+	text-align: center;
+	font-size: 8px;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 10px 0;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	li {
+		display: inline-block;
+    	float: none;
+    	width: 45px;
+    	height: 45px;
+    	background-color: $grey;
+    	margin: 20px 16px;
+    	cursor: pointer;
+    	text-align: center;
+    	font-size: 16px;
+    	position: relative;
+	}
+}
+#section-info {
+	padding: 110px 0;
+	border-bottom: 1px solid $dark-grey;
+	@media screen and (min-width: $desktop) {
+		border-bottom: 0;
+		border-top: 1px solid $dark-grey;
+		margin-top: 150px;
+  }
+}
+#section-thumbs {
+	width: 320px;
+	height: 120px;
+	overflow: hidden;
+	position: relative;
+	margin: 20px auto;
+	@media screen and (min-width: $desktop) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin-top: 25px;
+  }
+}
+#show-art {
+	margin: 0 auto;
+  	display: block;
+  	width: 190px;
+}
+#prev {
+	float: left;
+	padding-left: 20px;
+	cursor: pointer;
+	@media screen and (min-width: $desktop) {
+		position: absolute;
+    	left: -20px;
+    	top: 35px;
+  	}
+}
+#next {
+	float: right;
+	padding-right: 20px;
+	cursor: pointer;
+	@media screen and (min-width: $desktop) {
+		position: absolute;
+    	right: -20px;
+    	z-index: 1;
+    	top: 35px;
+  	}
+}
+#show-thumbs {
+	clear: both;
+	width: $mobile;
+}
+.thumb-num {
+	position: absolute;
+	top: 60px;
+}

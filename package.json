@@ -1,0 +1,15 @@
+{
+  "name": "exercise-frontend-master",
+  "version": "1.0.0",
+  "description": "Below is a HTML/CSS/JS exercise that involves building out a web component, or single page app, to navigate through various shows.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephany Shigekuni",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
