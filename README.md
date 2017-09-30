@@ -1,2 +1,2 @@
-# code-sample
+# simple-carousel
 Take home code exercise
